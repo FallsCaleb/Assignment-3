@@ -54,7 +54,7 @@ a:hover{color: red;}
 
 .I-type{list-style-type: upper-roman;}
 .i-type{list-style-type: lower-roman; }
-.EveryOther{background-color: rgb(50, 125, 20)}
+.EveryOther{background-color: rgb(125, 50, 20)}
 
 table {
   border: 2px solid;
