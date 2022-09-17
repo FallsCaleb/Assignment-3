@@ -25,6 +25,7 @@ html, body {
   
 }
 .header{
+  
   grid-area: one;
   padding: 20px;
 }
@@ -42,15 +43,36 @@ html, body {
   padding: 20px;
 }
 .banner3{
-  border: white;
   border-radius: 100px;
   width : 200px;
   height: 200px;
 }
 
-a {color: rgb(95, 200, 50);}
+a {color: rgb(50, 125, 20);}
 a:hover{color: red;}
 .NoBullets{ list-style-type: none;}
 
 .I-type{list-style-type: upper-roman;}
 .i-type{list-style-type: lower-roman; }
+.EveryOther{background-color: rgb(50, 125, 20)}
+
+table {
+  border: 2px solid;
+  font-family: serif;
+  font-size: 1.5em
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+h1{
+  position: relative;
+  left: 70%;
+  bottom: 80%;
+}
+
+#welcome{
+  position: static
+}
