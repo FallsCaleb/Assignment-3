@@ -15,7 +15,7 @@ html, body {
   "four two two two two"
   "three three three three three";
   gap: 10px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(4, auto);
 }
 .grid > * {

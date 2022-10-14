@@ -1,175 +1,99 @@
 <!DOCTYPE html>
+<html>
 
-  <html>
-  
-    <head>
-      
-      <meta charset="utf-8">
-      
-      <meta name="viewport" 
-        content="width=device-width">
-      
-      <title>
-        
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class = "grid">
+    <header class = "header">
+      <img src= "images/banner3.png" class="banner3"/>
+      <h1>
         Assignment 2
-      
-      </title>
-      
-      <link href="style.css" 
-        rel="stylesheet" type="text/css"/>
-      
-      
-    </head>
-   
-    <body>
-      
-      <div  class="gridbody">
-        
-        <header class="header">
-
-          <h1 >
-          
-            Lab 5
-            
-          </h1>
-          
-         </header>
-        
-        <main class="main">
-          
-          <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+      </h1>
+    </header>
+    <nav class = "nav">
+      <ul class = "NoBullets">
+        <li>
+          <a href = "index.html">
+          Home
+          </a>
+        </li>
+        <li>
+          <a href = "page2.html">
+            Page 2
+          </a>
+        </li>
+        <li>
+          <a href = "page3.html">
+            Page 3
+          </a>
+        </li>
+        <li>
+          <a href = "https://www.columbusstate.edu/">
+          CSU Home Page
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class = "main">
+      <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
             <label for="FirstName">First Name:</label><br>
-            <input type="text" id="FirstName" name="FirstName" required>
+            <input type="text" id="FirstName" name="FirstName" required size="50" maxlength="25">
             <br><br>
             
             <label for="LastName">Last Name:</label><br>
-            <input type="text" id="LastName" name="LastName" required>
+            <input type="text" id="LastName" name="LastName" required size="50" maxlength="25">
+            <br><br>
+
+            <label for="year">Birth Year:</label><br>
+            <input type="number" id="year" name="Birth Year" max="2022" min="1900" >
+            <br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="Phone Number" required placeholder="###-###-####"
+  pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}">
             <br><br>
 
             <label for="e-mail">Email:</label><br>
-            <input type="email" id="e-mail" name="e-mail" required>
+            <input type="email" id="e-mail" name="E-mail" required>
             <br><br>
 
-            <label for="State">State</label>
-            <select id="State" name="State">
-              <option value=""></option>
-              <option value="AL">AL</option>
-              <option value="FL">FL</option>
-              <option value="GA">GA</option>
-            </select>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="Username" minlength="5" maxlength="10" required>
             <br><br>
 
-            <span>Marital Status</span><br>
-            <input type="radio" id="Single" name="Status" value="Single">
-            <label for="Single">Single </label><br>
-            <input type="radio" id="Married" name="Status" value="Married">
-            <label for="Married">Married</label><br><br>
+            <label for="password">Enter Password:</label><br>
+            <input type="password" id="password" name="Password" minlength="8">
+            <br><br>
 
-            <span>Your Skills</span><br>
-            <input type="checkbox" id="Python" name="Skill1" value="Python">
-            <label for="Python">Python</label><br>
-            
-            <input type="checkbox" id="Java" name="Skill2" value="Java">
-            <label for="Java">Java</label><br>
-            
-            
-            <input type="checkbox" id="HTML" name="Skill3" value="HTML">
-            <label for="HTML">HTML</label><br><br>
-            
-            <label for="TextBox">Comments?</label><br>
-            <textarea id="TextBox" name="textBox" rows="10" cols="20"></textarea><br><br>
+            <label for="re-password">Re-Enter Password:</label><br>
+            <input type="password" id="re-password" name="Password" minlength="8">
+            <br><br>
 
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
           </form>
-          
-        </main>
-  
-        <footer class="footer">
-  
-           <p id="dateUpdater"></p>
-          
-        </footer>
-        
-        <nav class="nav">
+    </main>
+    <footer class = "footer">
+      Business information:
+      <ul class = "NoBullets">
+        <li>
+          Contacts: (###) ### - ####
+        </li>
+        <li>
+          Name: Business Inc.
+        </li>
+        <li>
+          Email: BusinessInc@email.com
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
 
-          <h3> 
-
-            Navigation
-
-          </h3>
-          
-          <ul>
-            
-            <li>
-              
-              <a href="index.html"  >
-                
-                Home
-                
-              </a>
-              
-            </li>
-            
-            <li>
-              
-              <a href="Lab1.html">
-                
-                Lab 1
-                
-              </a>
-              
-            </li>
-  
-            <li>
-            
-              <a href="Lab2.html">
-              
-                Lab 2
-              
-              </a>
-            
-            </li>
-  
-            <li>
-            
-              <a href="Lab3.html">
-              
-                Lab 3
-              
-              </a>
-            
-            </li>
-
-            <li>
-            
-              <a href="Lab4.html">
-              
-                Lab 4
-              
-              </a>
-            
-            </li>
-
-            <li>
-            
-              <a href="Lab6.html">
-              
-                Lab 6
-              
-              </a>
-            
-            </li>
-            
-            
-          </ul>
-          
-        </nav>
-
-      </div>
-
-      <script src="script.js"></script>  
-      
-    </body>
-  
-  </html>
+</html>
