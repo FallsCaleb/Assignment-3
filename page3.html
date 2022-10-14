@@ -41,20 +41,21 @@
       </ul>
     </nav>
     <main class = "main">
-      <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+      <form name="form" action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit= "return validate()">
             <label for="FirstName">First Name:</label><br>
-            <input type="text" id="FirstName" name="FirstName" required size="50" maxlength="25">
+            <input type="text" id="FirstName" name="FirstName" required size="50" maxlength="50">
             <br><br>
             
             <label for="LastName">Last Name:</label><br>
-            <input type="text" id="LastName" name="LastName" required size="50" maxlength="25">
+            <input type="text" id="LastName" name="LastName" required size="50" maxlength="50">
             <br><br>
 
             <label for="year">Birth Year:</label><br>
-            <input type="number" id="year" name="Birth Year" max="2022" min="1900" >
+            <input type="number" id="year" name="Birth Year" max="2022" min="1900" required >
             <br><br>
 
             <label for="phone">Phone Number:</label><br>
+<!--I used the pattern from w3schools and made it fit the pattern of a U.S. phone number.-->
             <input type="tel" id="phone" name="Phone Number" required placeholder="###-###-####"
   pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}">
             <br><br>
@@ -94,6 +95,7 @@
       </ul>
     </footer>
   </div>
+  <script src="script.js"></script> 
 </body>
 
 </html>
