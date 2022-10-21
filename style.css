@@ -1,21 +1,24 @@
 html, body {
-  height: 100%;
+  height: auto;
   width: 100%;
   padding: 5px;
   background-color: black;
   color: white;
-  
+}
+img{
+  height: auto;
+  width: 100%;
 }
 .grid{
 
   display: grid;
   grid-template-areas: 
-  "one one one one one"
-  "four two two two two"
-  "four two two two two"
-  "three three three three three";
+  "one one one one one one"
+  "four four two two five five"
+  "four four two two five five"
+  "three three three three three three";
   gap: 10px;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(4, auto);
 }
 .grid > * {
@@ -40,6 +43,10 @@ html, body {
 .nav{
   
   grid-area: four;
+  padding: 20px;
+}
+.aside{
+  grid-area: five;
   padding: 20px;
 }
 .banner3{
