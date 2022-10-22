@@ -19,27 +19,27 @@
     <nav class = "nav">
       <ul class = "NoBullets">
         <li>
-          <a href = "index.html">
+          <a tabindex="1" href = "index.html">
           Home
           </a>
         </li>
         <li>
-          <a href = "page1.html">
+          <a tabindex="2" href = "page1.html">
           Page 1
           </a>
         </li>
         <li>
-          <a href = "page2.html">
+          <a tabindex="3" href = "page2.html">
             Page 2
           </a>
         </li>
         <li>
-          <a href = "page3.html">
+          <a tabindex="4" href = "page3.html">
             Page 3
           </a>
         </li>
         <li>
-          <a href = "https://www.columbusstate.edu/">
+          <a tabindex="5" href = "https://www.columbusstate.edu/">
           CSU Home Page
           </a>
         </li>
@@ -47,42 +47,42 @@
     </nav>
     <main class = "main">
       <form name="form" action="https://webdevbasics.net/scripts/yoga.php" method="post" onsubmit= "return validate()">
-            <label for="FirstName">First Name:</label><br>
+            <label tabindex="6" for="FirstName">First Name:</label><br>
             <input type="text" id="FirstName" name="FirstName" required size="50" maxlength="50">
             <br><br>
             
-            <label for="LastName">Last Name:</label><br>
+            <label tabindex="7" for="LastName">Last Name:</label><br>
             <input type="text" id="LastName" name="LastName" required size="50" maxlength="50">
             <br><br>
 
-            <label for="year">Birth Year:</label><br>
+            <label tabindex="8" for="year">Birth Year:</label><br>
             <input type="number" id="year" name="Birth Year" max="2022" min="1900" required >
             <br><br>
 
-            <label for="phone">Phone Number:</label><br>
+            <label tabindex="9" for="phone">Phone Number:</label><br>
 <!--I used the pattern from w3schools and made it fit the pattern of a U.S. phone number.-->
             <input type="tel" id="phone" name="Phone Number" required placeholder="###-###-####"  
   pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}">
             <br><br>
 
-            <label for="e-mail">Email:</label><br>
+            <label tabindex="10" for="e-mail">Email:</label><br>
             <input type="email" id="e-mail" name="E-mail" required>
             <br><br>
 
-            <label for="username">Username:</label><br>
+            <label tabindex="11"  for="username">Username:</label><br>
             <input type="text" id="username" name="Username" minlength="5" maxlength="10" required>
             <br><br>
 
-            <label for="password">Enter Password:</label><br>
-            <input type="password" id="password" name="Password" minlength="8">
+            <label tabindex="12" for="password">Enter Password:</label><br>
+            <input type="password" id="password" name="Re-Entered Password" minlength="8">
             <br><br>
 
-            <label for="re-password">Re-Enter Password:</label><br>
+            <label tabindex="13" for="re-password">Re-Enter Password:</label><br>
             <input type="password" id="re-password" name="Password" minlength="8">
             <br><br>
 
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input tabindex="14" type="submit" value="Submit">
+            <input tabindex="15" type="reset" value="Reset">
           </form>
     </main>
     
