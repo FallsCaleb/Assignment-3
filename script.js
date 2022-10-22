@@ -1,3 +1,16 @@
+window.onload = draw; // Execute draw function when DOM is ready
+function draw() {
+     // Assign our canvas element to a variable 
+    var canvas = document.getElementById("canvas1");
+    // Check to see if the canvas is supported in the user broswer
+    if(canvas.getContext){
+       var canvas = document.getElementById("canvas1");
+var ctx = canvas.getContext("2d");
+ctx.font = "auto Arial";
+ctx.fillText("I forgot to add the script.js. 2 hours of pain!  T-T ",10,10);
+    }
+}
+
 //This function compares the initial password with the re-entered password.
 function validate(){
   // these usernames are taken
@@ -39,14 +52,3 @@ function validate(){
     
 }
 
-window.onload = draw; // Execute draw function when DOM is ready
-function draw() {
-     // Assign our canvas element to a variable 
-    var canvas = document.getElementById("canvas1");
-    // Check to see if the canvas is supported in the user broswer
-    if(canvas.getContext){
-        var ctx = canvas.getContext("2d"); 
-        ctx.fillStyle = "rgba(24,124,200,1)";
-        ctx.fillRect (36, 10, 40, 40);
-    }
-}

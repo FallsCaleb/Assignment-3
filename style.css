@@ -9,11 +9,6 @@ img{
   height: auto;
   width: 100%;
 }
-#canvas1{
-  border: 1px solid white;
-  height: auto;
-  width: 100%;
-}
 .grid{
 
   display: grid;
@@ -89,6 +84,17 @@ h1{
   position: static
 }
 
+#canvas1{
+  border: 5px solid green;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  min-width: 50%;
+}
+.innerAside{
+  height: auto;
+  width: 100%;
+}
 @media  screen and (orientation: portrait) {
   html, body {
   height: auto;
@@ -116,5 +122,14 @@ h1{
     padding: auto;
     
   }
-  
+  #canvas1{
+  border: 5px solid red;
+  height: auto;
+  width: 100%;
+  min-width: 50%;
+  }
+  .EveryOther{background-color: pink}
+  a {color: red;}
+  a:hover{color: green;}
+  .NoBullets{ list-style-type:     none;}
 }
